@@ -1638,8 +1638,7 @@ impl Frontend for RustProjectFrontend {
             package,
             &found.component,
             &found.sections,
-            cx.assembly().target,
-            cx.assembly().package_registry,
+            cx.assembly(),
         )
     }
 }
