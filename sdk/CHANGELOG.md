@@ -9,6 +9,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Added optional `codec-component` support to the internal `miden-note-schema` host crate. It can
+  load author-defined note codecs from a package without adding Wasmtime to the default feature
+  set or the guest SDK dependency graph.
+- Added typed host note-storage bindings through the internal `miden-note-bindings` macros. Bindings
+  can load a built note project or an exact `.masp`, generate native Rust storage types, and convert
+  typed values to and from note storage.
+- `#[note]` now embeds a WIT storage schema for named-field note structs in the
+  `note_storage_schema` section of the compiled `.masp`. Schema records preserve Rust doc comments
+  and can include nested types declared with `#[export_type]` before the note struct. Unit structs
+  emit no schema; tuple structs and `Vec` fields are not supported yet.
 - The new `miden-sdk-build-script-support` crate owns the package-staging protocol needed by
   plain Cargo builds and IDE analysis. Contract crates add it as a build dependency and call `prepare_package_cache()`
 - `println!` supports format arguments; formatted output requires `extern crate alloc` and a
