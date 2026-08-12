@@ -35,7 +35,7 @@ fn basic_wallet_and_p2id() {
     );
     let note_package = p2id_test.compile_package();
     assert!(note_package.is_library(), "expected library");
-    expect!["17024"].assert_eq(stripped_mast_size_str(&note_package).as_str());
+    expect!["17058"].assert_eq(stripped_mast_size_str(&note_package).as_str());
     // The note package exports both the note script and the `build-recipient` constructor; the
     // constructor must not interfere with the `@note_script`-attributed export selection.
     assert!(
@@ -52,5 +52,5 @@ fn basic_wallet_and_p2id() {
     );
     let p2ide_package = p2ide_test.compile_package();
     assert!(p2ide_package.is_library(), "expected library");
-    expect!["13103"].assert_eq(stripped_mast_size_str(&p2ide_package).as_str());
+    expect!["13137"].assert_eq(stripped_mast_size_str(&p2ide_package).as_str());
 }
