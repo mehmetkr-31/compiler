@@ -285,6 +285,12 @@ publish = true
 version-source = "sdk"
 
 [[packages]]
+name = "miden-note-codec-wit"
+unit = "sdk"
+publish = true
+version-source = "sdk"
+
+[[packages]]
 name = "midenc-benchmark-runner"
 unit = "private"
 publish = false
