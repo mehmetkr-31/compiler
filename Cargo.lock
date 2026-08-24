@@ -3461,8 +3461,7 @@ dependencies = [
 [[package]]
 name = "miden-debug"
 version = "0.10.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6ed993a17b7c5e13177f032bd5c01b1615d600a34f441a80783a9d0428f9523f"
+source = "git+https://github.com/0xMiden/miden-debug?branch=feat%2Fcontract-benchmark#80bdc56dc598146044a4ec4d5f3a1b9752229571"
 dependencies = [
  "clap",
  "compact_str",
@@ -3494,8 +3493,7 @@ dependencies = [
 [[package]]
 name = "miden-debug-dap"
 version = "0.9.2"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "d974ad4982cd62cb8357977a19c6ecc0a1c1daaccb068d45262cc3783985afa5"
+source = "git+https://github.com/0xMiden/miden-debug?branch=feat%2Fcontract-benchmark#80bdc56dc598146044a4ec4d5f3a1b9752229571"
 dependencies = [
  "serde",
  "serde_json",
@@ -3505,8 +3503,7 @@ dependencies = [
 [[package]]
 name = "miden-debug-engine"
 version = "0.11.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "6216e37ce0cdbb2f9c5800216ac94c5c3dbac398436a405a4d0fe9eb23b1ae76"
+source = "git+https://github.com/0xMiden/miden-debug?branch=feat%2Fcontract-benchmark#80bdc56dc598146044a4ec4d5f3a1b9752229571"
 dependencies = [
  "clap",
  "glob",
